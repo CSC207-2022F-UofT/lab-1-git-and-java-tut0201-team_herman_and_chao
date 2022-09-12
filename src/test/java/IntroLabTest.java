@@ -30,4 +30,11 @@ public class IntroLabTest {
      *       the test results.
      * As a reference, we've included testExampleStudent above.
      */
+    @Test(timeout = 10)
+    public void testPrintCool() {
+        String expected = "Cool";
+        String actual = IntroLab.printCool();
+        assertEquals(expected, actual);
+    }
+
 }
